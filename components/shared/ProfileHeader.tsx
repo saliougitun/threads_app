@@ -7,6 +7,7 @@ interface Props {
   username: string;
   imgUrl: string;
   bio: string;
+  type?: "User" | "Community";
 }
 
 const ProfileHeader = ({
@@ -36,7 +37,7 @@ const ProfileHeader = ({
             <p className="trxt-base-medium text-gray-1">@{username}</p>
           </div>
         </div>
-      </div> 
+      </div>
       {/*TODO: Community  */}
       <p className="mt-6 max-w-lg text-base-regular text-light-2">{bio}</p>
       <div className="mt-12 h-9.5 w-full bg-dark-3"></div>
