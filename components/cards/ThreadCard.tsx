@@ -108,6 +108,7 @@ const ThreadCard = ({
         </div>
         {/*Todo: delete threads */}
         {/*Todo: show comment logos */}
+<<<<<<< HEAD
       </div>
       {!isComment && community && (
         <Link
@@ -127,6 +128,26 @@ const ThreadCard = ({
           />
         </Link>
       )}
+=======
+      </div>  
+      {!isComment && community && (
+          <Link
+            href={`/communities/${community.id}`}
+            className="mt-5 flex items-center"
+          >
+            <p className="text-subtle-medium text-gray-1">
+              {formatDateString(createdAt)}-{community.name} Community
+            </p>
+            <Image
+              src={community.image}
+              alt={community.name}
+              width={14}
+              height={14}
+              className="ml-1 rounded-full object-cover"
+            />
+          </Link>
+        )}
+>>>>>>> 97d908ea0b14135db4d4eccecbee28c04381f721
     </article>
   );
 };
